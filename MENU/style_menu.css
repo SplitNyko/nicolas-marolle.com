@@ -1,0 +1,221 @@
+/**/
+
+.Menu {
+    background-color: #333;
+
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    
+    box-shadow: 0px 7px 20px black;
+    z-index: 10;
+}
+
+.Menu a {
+    display: table-cell; 
+    list-style-type: none;
+    display:inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 2px;
+    text-decoration: none;
+
+    width: 200px;
+
+    margin-left: 0 auto;
+    
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.Menu a:hover {
+    background-color: #111;
+    
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.Menu a:focus {
+    color: #4CAF50;
+
+}
+
+#divmenu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1428px;
+}
+
+.Menu a:target {
+     border: 2px solid #D4D4D4;
+     background-color: #e5eecc;
+}
+
+
+#ICON {
+    width: 20%;
+    height: auto;
+}
+
+.Menu a #Nom::after {
+        content: "MAROLLE";
+}
+
+.Menu a #Version::after {
+    content: "Version";
+}
+
+@media screen and (max-width: 1428px) {
+    #ICON{
+        width: 18%;
+    }
+
+    .Menu a {
+        padding: 9px 0px;
+        width: 140px;
+    }
+
+    .Menu a #Nom::after {
+        content: "M.";
+    }
+
+    .Menu a #Version::after {
+    content: "V.";
+}
+}
+
+
+
+@media screen and (max-width: 980px){
+    #ICON{
+        width: 16%;
+    }
+
+    .Menu a{
+        font-size: 12px;
+        padding: 6px 0px;
+        width: 114px;
+    }
+}
+
+#choice_flag{
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flag {
+    width: 80%;
+    height: 90%;
+
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .Menu {
+    margin: 0 0 0 0;
+    padding: 0px;
+    background-color: #333;
+
+    width: 50%;
+    height: 92vh;
+    position: fixed;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    top: 8vh;
+    transform: translate(-100%);
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    transition: transform 0.2s;
+}
+
+.Menu a {
+    list-style-type: none;
+    display:inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 2px;
+    text-decoration: none;
+
+    
+    width: 100%;
+
+    margin-left: 0 auto;
+    
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2vh;
+    
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.Menu a:hover {
+    background-color: #111;
+    
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.Menu a:focus {
+    color: #4CAF50;
+
+}
+
+#divmenu {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Menu a:target {
+     border: 2px solid #D4D4D4;
+     background-color: #e5eecc;
+}
+
+
+#ICON {
+    width: 15%;
+    height: auto;
+}
+
+.Menu a #Nom::after {
+        content: "M.";
+}
+
+.slidebar .Menu {
+    transform: translate(0px);
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    transition: transform 0.3s;
+    box-shadow: 9px 20px 20px black;
+}
+
+#choice_flag{
+    display : flex;
+    justify-content: space-around;
+}
+
+.flag {
+    width: 80%;
+    height: 90%;
+
+    background-color: red;
+}
+}

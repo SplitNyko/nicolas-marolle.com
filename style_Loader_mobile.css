@@ -1,0 +1,82 @@
+.End_Loader .arrow-down {
+    top: calc(3vh*4/9);
+
+
+    left: calc(50% - 7.5vh*0.4);
+	width: 0;
+	height: 0;
+	border-left: calc(7.5vh*0.4) solid transparent;
+	border-right: calc(7.5vh*0.4) solid transparent;
+	border-top: calc(15vh*0.4) solid white;
+	position: fixed;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.End_Loader .arrow-down:before {
+	content:'';
+	border-left: calc(7.5vh*0.4) solid transparent;
+	border-right: calc(7.5vh*0.4) solid transparent;
+	border-top: calc(12vh*0.4) solid #333;
+	width:0;
+	height:0;
+	position: absolute;
+	top:calc(-15vh*0.4);
+	left:calc(-7.5vh*0.4);
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.End_Loader .arrow-down:after {
+	content:'';
+	border-left: calc(7.5vh*0.4) solid transparent;
+	border-right: calc(7.5vh*0.4) solid transparent;
+	border-top: calc(3vh*0.4) solid white;
+	width:0;
+	height:0;
+	position: absolute;
+	top:calc(-15vh*0.4);
+	left:calc(-7.5vh*0.4);
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.End_Loader .arrow-down2 {
+	margin:calc(30vh*0.4) auto;
+	width: 0;
+	height: 0;
+	border-left: calc(7.5vh*0.4) solid transparent;
+	border-right: calc(7.5vh*0.4) solid transparent;
+	border-bottom: calc(3vh*0.4) solid white;
+	position: relative;
+    top:calc(-47.9vh*0.4);
+	left:calc(-7.5vh*0.4);
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.End_Loader .arrow-down2:after {
+	content:'';
+	border-left: calc(0.6vh*0.4) solid transparent;
+	border-right: calc(0.6vh*0.4) solid transparent;
+	border-top: calc(15vh*0.4) solid white;
+	width:0;
+	height:0;
+	position: absolute;
+	top:calc(1.5vh*0.4);
+	left:calc(-0.60vh*0.4);
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+/*****************************/
+/*****************************/

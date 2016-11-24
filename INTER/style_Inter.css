@@ -1,0 +1,7 @@
+#Inter {
+    background-image: url("../IMAGES/Taxi_NewYork.jpg");
+    background-attachment: fixed;
+	background-size: cover;
+    min-height: 20vh;
+    width: 100%;
+}

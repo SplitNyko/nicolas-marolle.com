@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow:  hidden;
+}
+
+.Overflow {
+    overflow :auto;
+}
+
+#FORMATION {
+    background-color: rgb(179, 230, 255);
+}
+
+#PORTEFOLIO {
+    background-color: lightgreen;
+}
+
+/*#CONTACT {
+    background-image: url("IMAGES/Background_CONTACT.png");
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    opacity: 0;
+    }*/
+
+/*video#bgvid {
+ z-index: -1;
+ position : fixed;
+ width: auto;
+ height: auto;
+ background-size: auto;
+ left : 0; bottom: 0;
+ opacity: 0.4;
+}*/
+
+.MiseEnPage {
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    padding : 90px 0px;
+}
+
+.POSITION {
+    width: 1024px;
+    margin: 0 auto;
+
+}
+
+.FONT_MAIN {
+    font-family: "Raleway",sans-serif;
+    font-weight : 700;
+    font-size : 4vh;
+    color: black;
+}
+
+.HEADER_POSITION {
+    width: 1428px;
+    height: 200px;
+    margin: auto auto; 
+
+    background: black;
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 1428px) {
+        .POSITION
+    {
+        width: 980px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .POSITION
+    {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    #CONTACT
+    {
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+        video#bgvid
+    {
+        opacity: 0;
+    }
+
+}
+
+/*hr
+{
+    margin : 0 auto;
+    width: 400px;
+    border: 2px solid ghostwhite;
+    border-radius: 2px;
+
+    animation-name: Clignotement-Barre;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}*/
+
+@keyframes Clignotement-Barre {
+    25%{ opacity : 0; }
+    50%{ opacity : 1; }
+    75%{ opacity : 0; }
+}
+
+.slidebar .Main {
+    filter: blur(3px);
+      -webkit-filter: blur(4px);
+      -moz-filter: blur(4px);
+      -o-filter: blur(4px);
+      -ms-filter: blur(4px);
+
+      -webkit-transition: all 1s 0.3s;
+      -moz-transition: all 1s 0.3s;
+      transition: all 1s 0.3s;
+}
+

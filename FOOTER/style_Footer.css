@@ -1,0 +1,15 @@
+footer {
+    background: #333;
+    width: 100%;
+    padding: 10px 0;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#realisation {
+    font-family: Verdana, sans-serif;
+    width: auto;
+    height: auto;
+    color : darkgrey;
+}

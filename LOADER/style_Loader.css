@@ -1,0 +1,165 @@
+.Load {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    z-index: +1000;
+    background-color: #333;
+    position : fixed;
+    top : 0px;
+    left : 0px;
+    cursor: progress;
+}
+
+/***********************************/
+/***********************************/
+
+.arrow-down {
+    left: calc(50% - 7.5vh);
+    top: 30%;
+	width: 0;
+	height: 0;
+	border-left: 7.5vh solid transparent;
+	border-right: 7.5vh solid transparent;
+	border-top: 15vh solid white;
+	position: fixed;
+}
+
+.arrow-down:before {
+	content:'';
+	border-left: 7.5vh solid transparent;
+	border-right: 7.5vh solid transparent;
+	border-top: 12vh solid #333;
+	width:0;
+	height:0;
+	position: absolute;
+	top:-15vh;
+	left:-7.5vh;
+}
+
+.arrow-down:after {
+	content:'';
+	border-left: 7.5vh solid transparent;
+	border-right: 7.5vh solid transparent;
+	border-top: 3vh solid white;
+	width:0;
+	height:0;
+	position: absolute;
+	top:-15vh;
+	left:-7.5vh;
+}
+
+.arrow-down2 {
+	margin:30vh auto;
+	width: 0;
+	height: 0;
+	border-left: 7.5vh solid transparent;
+	border-right: 7.5vh solid transparent;
+	border-bottom: 3vh solid white;
+	position: relative;
+    top:-47.9vh;
+	left:-7.5vh;
+}
+
+.arrow-down2:after {
+	content:'';
+	border-left: 0.6vh solid transparent;
+	border-right: 0.6vh solid transparent;
+	border-top: 15vh solid white;
+	width:0;
+	height:0;
+	position: absolute;
+	top:1.5vh;
+	left:-0.55vh;
+}
+
+/***********************************/
+/***********************************/
+
+.loader {
+    width: 100%;
+    margin: auto;
+    padding-top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 5vh;
+
+    
+}
+
+.End_Loader .arrow-down {
+    top: -30vh;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.End_Loader .Load {
+    opacity: 0;
+    z-index: -100;
+    -webkit-transition: all 0.5s 1s;
+    -moz-transition: all 0.5s 1s;
+    transition: all 0.5s 1s;
+}
+
+.End_Loader .loader {
+
+    opacity: 0;
+
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+/***********************************/
+/***********************************/
+
+.animation-loader {
+    margin: 3vh;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    position: relative;
+    animation: rotation 2s linear infinite;
+}
+
+.animation-loader:after {
+    content: '';
+    position: absolute;
+    border: 3px solid transparent;
+    border-top-color: white;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: rotation 2s linear infinite;
+}
+
+.animation-loader:before {
+    content: '';
+    position: absolute;
+    border: 3px solid transparent;
+    border-top-color: white;
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: rotation 4s linear infinite;
+}
+
+@keyframes rotation {
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg);}
+}

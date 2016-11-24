@@ -1,0 +1,14 @@
+#PRESENTATION {
+    background-color: #adadad;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+    text-align: center;
+}
+
+.POSITION_Presentation {
+    margin : auto;
+    width: 800px;
+}

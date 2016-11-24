@@ -1,0 +1,126 @@
+#Contact {
+    margin: 0;
+    padding: 0;
+    background-image: url('../IMAGES/mt-fuji.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+
+.email {
+    font-size: 3vh;
+    background-color: #333;
+    border: none;
+    margin: 1vh 0;
+    opacity: 0.9;
+    color: white;
+    border-radius: 2px;
+
+}
+
+#nom, #courriel, #objet {
+    height: 4vh;
+}
+
+#nom::-moz-placeholder {
+    color : white;
+}
+
+#nom, #courriel {
+    text-align: center;
+}
+
+.email:invalid {
+    background-color: #333;
+    border-radius: 0px;
+
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    transition: 1s all;
+}
+.email:valid {
+    background-color: green;
+    opacity: 1;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    transition: 1s all;
+}
+
+#message:valid {
+    background-color: #333;
+    border: solid 2px green;
+}
+
+#Formulaire {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    width: 70%;
+    max-width: 800px;
+}
+
+@media screen and (max-width: 600px) {
+    #Formulaire {
+        min-width: 98%;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #Formulaire {
+        min-width: 98%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #Formulaire {
+        min-width: 70%;
+    }
+}
+
+/*@media handheld and (orientation: landscape) {
+    #Formulaire {
+        min-width: 50%;
+    }
+}*/
+
+ #Envoi {
+    font-size: 3vh;
+    background-color: #333;
+    color: white;
+    border: none;
+    width: inherit;
+    margin: 1vh auto;
+
+}
+::-webkit-input-placeholder {
+    color: white;
+}
+
+:-moz-placeholder {
+    color: white;
+}
+
+::-moz-placeholder {
+    color: white;
+}
+
+:-ms-input-placeholder {  
+    color: white;
+}
+
+#bgvid {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    object-fit: cover;
+
+    opacity: 0.5;
+}

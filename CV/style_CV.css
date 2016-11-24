@@ -1,0 +1,267 @@
+#CV {
+    width: 100%;
+    min-height: 100vh;
+    padding : 5px 0px;
+    display: flex;
+    flex-direction: column;
+
+    /*background-color: rgb(204, 221, 255);*/
+    background-image: url(../IMAGES/WALLPAPER_BLUR2.jpg);
+    background-attachment: fixed;
+	background-size: cover;
+}
+
+/*#CV:before {
+    content: '';
+    
+        background-image: url(IMAGES/blur_wallpaper.jpg);
+    -webkit-filter: blur(5px);
+           -moz-filter: blur(5px);
+            -ms-filter: blur(5px);
+             -o-filter: blur(5px);
+                filter: blur(5px);
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;    
+    z-index: -1;
+}*/
+
+#CV #Conteneur_CV {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin : auto;
+    min-width: 50%;
+    /*background-color: palegreen;*/
+}
+
+#CV #Conteneur_CV::before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    left: calc(50% - 3px);
+    background-color: #333;
+}
+
+#CV #Conteneur_CV .Subconteneur_CV {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+    
+    /*background-color: indianred;*/
+}
+
+#CV #DL_CV {
+    margin-top : 20px; 
+    width: 200px;
+    height: 50px;
+    background-color: sandybrown;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+   	text-align: center;
+    padding: 5px 3px 5px 3px;
+    color: white;
+    font-size: 20px;
+}
+
+#ICON_DL_CV {
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.Temps_CV {
+    margin-top: 2.5em;
+    height: 50px;
+    width: 20%;
+    background-color: #ce9e80;
+    border-radius: 5px;
+    text-align: center;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+}
+
+.Gauche {
+    margin-left: 25%;
+}
+
+.Droite {
+    margin-right: 25%;
+}
+
+
+.Logo_CV {
+
+    width: 5em;
+    height: 5em;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.TXT_CV {
+    margin-top: 2.5em;
+    min-height: 20vh;
+    width: 45%;
+    background-color: rgb(179, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+   	text-align: center;
+    
+}
+
+.TXT_CV h2 {
+    border-radius: 7px 7px 0 0;
+    margin-top:0px;
+    height: 20px;
+    width: 100%;
+    background-color: pink;
+}
+
+.haut_section {
+    width: 70%;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*background-color: red;*/
+}
+
+.haut_section hr {
+    margin : auto;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+    border: none;
+}
+
+.img_section {
+    height: 8vh;
+}
+
+@media screen and (max-width: 768px)  {
+    #Conteneur_CV .Subconteneur_CV .element:nth-child(1) {
+        order: 3;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element:nth-child(2) {
+        order: 1;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element:nth-child(3) {
+        order: 2;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element2:nth-child(1) {
+        order: 2;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element2:nth-child(2) {
+        order: 1;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element2:nth-child(3) {
+        order: 3;
+    }
+
+
+    .Gauche {
+        margin-left: 0;
+    }
+
+    .Droite {
+        margin-right: 0;
+    }
+    
+    #CV #Conteneur_CV .Subconteneur_CV {
+    justify-content: flex-end;
+    }
+
+    .TXT_CV {
+        width: 87%;
+        margin: 1%;
+    }
+
+    .Logo_CV {
+
+    background-color: #333;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    margin: 1%;
+    }
+
+    .Temps_CV {
+        margin: 1%;
+    }
+}
+
+@media screen and (max-device-width: 768px)  {
+    #Conteneur_CV .Subconteneur_CV .element:nth-child(1) {
+        order: 3;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element:nth-child(2) {
+        order: 1;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element:nth-child(3) {
+        order: 2;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element2:nth-child(1) {
+        order: 2;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element2:nth-child(2) {
+        order: 1;
+    }
+
+    #Conteneur_CV .Subconteneur_CV .element2:nth-child(3) {
+        order: 3;
+    }
+
+
+    .Gauche {
+        margin-left: 0;
+    }
+
+    .Droite {
+        margin-right: 0;
+    }
+    
+    #CV #Conteneur_CV .Subconteneur_CV {
+    justify-content: flex-end;
+    }
+
+    .TXT_CV {
+        width: 87%;
+        margin: 1%;
+    }
+
+    .Logo_CV {
+
+    background-color: #333;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    margin: 1%;
+    }
+
+}

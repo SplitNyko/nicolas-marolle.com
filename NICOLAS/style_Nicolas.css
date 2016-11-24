@@ -1,0 +1,54 @@
+#NICOLAS {
+    background-image: url("http://nicolas-marolle.com/IMAGES/cup-of-coffee.jpg");
+    background-attachment: fixed;
+	background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    padding :1px 0px;
+    display: flex;
+
+    text-align: center;
+}
+
+#NICOLAS .POSITION_Nicolas {
+    margin: auto;
+
+    font-family: "Raleway",sans-serif;
+    font-size : 3vh;
+    color: lightgrey;
+}
+
+#NICOLAS .POSITION_Nicolas h1 {
+    margin: 15px;
+    text-shadow: 0px 3px 5px black;
+    
+}
+
+#NICOLAS .POSITION_Nicolas hr
+{
+    margin : auto;
+    width: 80%;
+    height: 2px;
+    background-color: lightgrey;
+    /*border: 2px solid lightgrey;*/
+    border-radius: 2px;
+
+    animation-name: Clignotement-Barre;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 3px 10px black;
+}
+
+#NICOLAS .POSITION_Nicolas #portrait {
+    margin: 20px auto;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    background-image: url("../IMAGES/MOI5.png");
+    background-position: center;
+    
+	background-size: cover;
+    box-shadow: 0px 5px 30px black;
+    
+
+}
