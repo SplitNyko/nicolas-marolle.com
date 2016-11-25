@@ -1,0 +1,116 @@
+#Menu_Langue ul
+{
+    margin:0;
+    padding: 0;
+    list-style-type:none;
+    text-align:center;
+
+
+    background-color: mediumseagreen;
+    position: fixed;
+    left: 0; bottom: 25px;;
+}
+
+#Menu_Langue li
+{
+    margin:auto;
+    padding:0;
+    background-color: darkred;
+}
+
+#Menu_Langue li a
+{
+    display: block;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#Menu_Langue ul il .Langue ul
+{
+    display: none;
+}
+#Menu_Langue ul li:hover ul
+{
+    display: block;
+}
+
+.Langue a
+{
+    
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;  
+}
+
+#Menu_Langue li ul
+{
+    visibility: hidden;
+    opacity: 0.2;
+}
+
+#menu_Langue ul li:hover ul {
+ display:block;
+ }
+#menu_Langue li:hover ul li {
+ float:none;
+ }
+
+#menu_Langue li ul {
+ position:absolute;
+ }
+
+ #menu_Langue {
+ height:50px;
+ }
+
+
+
+
+/*#menu ul {
+ margin:0;
+ padding:0;
+ list-style-type:none;
+ text-align:center;
+ }
+#menu li {
+ float:left;
+ margin:auto;
+ padding:0;
+ background-color:black;
+ }
+#menu li a {
+ display:block;
+ width:100px;
+ color:white;
+ text-decoration:none;
+ padding:5px;
+ }
+#menu li a:hover {
+ color:#FFD700;
+ }
+
+#menu ul li ul {
+ display:none;
+ }
+
+#menu ul li:hover ul {
+ display:block;
+ }
+#menu li:hover ul li {
+ float:none;
+ }
+
+#menu li ul {
+ position:absolute;
+ }
+
+#menu {
+ height:50px;
+ }
